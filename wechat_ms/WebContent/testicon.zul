@@ -1,0 +1,42 @@
+<zk xmlns:n="native">
+	<style>
+		/*hex codes for fontawesome icons taken from http://fortawesome.github.io/Font-Awesome/cheatsheet/ */
+		.z-treerow.folder > .z-treecell > .z-treecell-content > .z-tree-icon > .z-tree-close:before {
+			content: "\f114";
+		}
+		.z-treerow.folder > .z-treecell > .z-treecell-content > .z-tree-icon > .z-tree-open:before {
+			content: "\f115";
+		}
+	</style>
+	<tree>
+		<treechildren>
+			<treeitem label="default">
+				<treechildren>
+					<treeitem label="111.1"/>
+					<treeitem label="111.2"/>
+					<treeitem label="111.3"/>
+				</treechildren>
+			</treeitem>
+			<treeitem>
+				<treerow>
+					<treecell><n:i class="z-icon z-icon-folder-o"/> add an additional icon</treecell>
+				</treerow>
+				<treechildren>
+					<treeitem label="file1.txt"/>
+					<treeitem label="file2.txt"/>
+					<treeitem label="file3.txt"/>
+				</treechildren>
+			</treeitem>
+			<treeitem>
+				<treerow sclass="folder">
+					<treecell>customize icon using css</treecell>
+				</treerow>
+				<treechildren>
+					<treeitem label="222.1" />
+					<treeitem label="222.2" />
+					<treeitem label="222.3" />
+				</treechildren>
+			</treeitem>
+		</treechildren>
+	</tree>
+</zk>
